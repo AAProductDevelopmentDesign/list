@@ -12,7 +12,7 @@ require('./index.css').toString();
 /**
  * List Tool for the Editor.js 2.0
  */
-class List {
+class CustomListSp {
 
   /**
    * Notify core that read-only mode is supported
@@ -499,4 +499,4 @@ class List {
   }
 }
 
-module.exports = List;
+module.exports = CustomListSp;

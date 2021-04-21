@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Url Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.19.0/dist/editor.min.js"></script>
+    <script src="../dist/bundle.js"></script>
+    <script src="../sp-dist/index.js"></script>
+    <script src="../lo-dist/index.js"></script>
+    <style>
+        /* 
+* Modifies editorjs-latex
+*/
+
+.math-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px !important;
+}
+
+.math-preview {
+    min-height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(153, 216, 231) !important;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px !important;
+}
+
+.math-preview * {
+    font-family: 'Katex_Math';
+}
+
+.math-input {
+    border: 1px solid rgb(153, 216, 231) !important;
+    background: none;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.math-label {
+    font-size: 8pt;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: rgb(185, 185, 185);
+    font-size: 12pt !important;
+}
+
+/* 
+* Modifies editor js custom-lo
+* Need to specify important!
+*/
+
+.lo-list {
+    border: 1px solid #c8eba0;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.sp-list {
+    border: 1px solid #e6c8ad;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Both labels sp and lo are labelled this */
+.lo-label {
+    font-size: 8pt;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: rgb(185, 185, 185);
+    font-size: 12pt !important;
+}
+
+.cdx-subscript {
+    vertical-align: unset;
+}
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./script.js" defer></script>
+</head>
+
+<body class="container">
+    <h1 style="text-align: center">Image Example</h1>
+    <p style="text-align: center">Follow the README.md for instructions</p>
+    <div id="editorjs"></div>
+    <!-- <button onclick="save()">Save</button> -->
+</body>
+
+</html>
