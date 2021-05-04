@@ -12,6 +12,10 @@ const editor = new EditorJS({
         sp: {
             class: CustomListSp,
             inlineToolbar: true,
+        },
+        tp: {
+            class: CustomListTp,
+            inlineToolbar: true,
         }
     },
     onChange: async (e) => { await e.saver.save()},
